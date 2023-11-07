@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<title>Music Player</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="main-header">
+				<h1 class="title">أغاني كرتون زمان</h1>
+				<button class="mode">الوضع الداكن</button>
+			</header>
+			<div class="music-list">
+				<ol class="songs"></ol>
+			</div>
+			<div class="music-details">
+				<h3></h3>
+			</div>
+			<div class="progress-bar">
+				<div class="progress"></div>
+				<div class="time">
+					<span class="current"></span>
+					<span class="duration"></span>
+				</div>
+				<audio id="audio" src=""></audio>
+			</div>
+			<footer>
+				<div class="flow-box">
+					<i class="fa-solid fa-right-long flow show long"></i>
+					<i class="fa-solid fa-repeat flow repeat"></i>
+					<i class="fa-solid fa-shuffle shuffle"></i>
+				</div>
+				<div class="control">
+					<i class="fa-solid fa-backward-step prev"></i>
+					<div class="play-pause">
+						<i class="fa-solid fa-play play"></i>
+						<i class="fa-solid fa-pause pause"></i>
+					</div>
+					<i class="fa-solid fa-forward-step next"></i>
+				</div>
+				<i class="fa-solid fa-list list-icon"></i>
+			</footer>
+			<h4 class="dev">مطور التطبيق رماح</h4>
+		</div>
+		<script src="js/music.js" type="module"></script>
+		<script src="js/script.js" type="module"></script>
+	</body>
+</html>
